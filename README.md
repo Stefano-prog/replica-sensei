@@ -40,12 +40,12 @@ Se mide lo mismo que en las Tablas 6 y 7 del paper:
 
 | Chatbot | Conv. | Fallas paper | Fallas réplica | Tiempo prom. paper | Tiempo prom. réplica |
 |---|---|---|---|---|---|
-| Julie (en vivo) | 23 de 32* | 53 (G 8, GR2 11, GR3 15, GR4 19) | 33* (G 13, GR2 11, GR4 9) | 1,23 s | 0,82 s |
+| Julie (en vivo) | 32 | 53 (G 8, GR2 11, GR3 15, GR4 19) | 47 (G 14, GR1 1, GR2 12, GR3 10, GR4 10) | 1,23 s | 0,76 s |
 | Serviceform (en vivo) | 12 | 9 (G 1, GR1 1, GR2 5, GR3 2) | 3 (GR1 3) | 5,48 s | 2,44 s |
 | Catalina (análisis reproducido) | 14 | 20 (C 3, G 7, GR2 10) | 20 (idéntico) | — | — |
-| SAIC (análisis reproducido) | 14 | 22 (C 2, G 8, T 1, GR2 11) | 23 (+1 GR1) | — | — |
+| SAIC (análisis reproducido) | 14 | 22 (C 2, G 8, T 1, GR2 11) | 24 (+2 GR1) | — | — |
 
-\* La ejecución de Julie es parcial: 23 de 32 conversaciones, porque se agotó la cuota gratuita del día. Falta evaluar GR1 y GR3, que usan el LLM como juez.
+Julie y Serviceform se ejecutaron en vivo entre el 15 y el 17 de noviembre de 2026 (la cuota gratuita de Gemini obligó a repartir la ejecución en varios días; el Paso 11 restaura lo hecho antes).
 
 Los tiempos del paper se calcularon a partir de las conversaciones originales de los autores. La regla `chatbot_fills_all_slots` no se cuenta porque no está en la Tabla 6.
 
